@@ -7,7 +7,8 @@
 
 package api
 
-// #cgo darwin LDFLAGS: -lodbc
+// #cgo darwin LDFLAGS: -L /opt/homebrew/opt/unixodbc/lib -lodbc
+// #cgo darwin CFLAGS: -I /opt/homebrew/opt/unixodbc/include
 // #cgo linux LDFLAGS: -lodbc
 // #cgo freebsd LDFLAGS: -L /usr/local/lib -lodbc
 // #cgo freebsd CFLAGS: -I/usr/local/include
